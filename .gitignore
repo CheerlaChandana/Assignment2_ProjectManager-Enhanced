@@ -1,0 +1,23 @@
+# ---- C# / .NET ----
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ---- React / TypeScript ----
+node_modules/
+dist/
+build/
+*.log
+*.env
+.DS_Store
+
+# ---- VSCode / IDE ----
+.vscode/
+.idea/
+*.vs/
+
+# ---- OS ----
+Thumbs.db
