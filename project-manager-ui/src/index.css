@@ -1,0 +1,396 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form h1 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box; /* Important for padding to work right */
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+/* --- DASHBOARD STYLES (Add to src/index.css) --- */
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.logout-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+    background: #c82333;
+}
+
+.project-form {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.project-form h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.project-form input,
+.project-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.project-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.project-list-section h2 {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e9ecef;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-title-link {
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.project-title-link:hover {
+    text-decoration: underline;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+/* --- PROJECT DETAILS STYLES (Add to src/index.css) --- */
+
+.project-details-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-header {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.project-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.project-description {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.task-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #495057;
+}
+
+.task-form-section {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.task-form h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #007bff;
+    font-size: 1.25rem;
+}
+
+.task-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.task-input-group input[type="text"] {
+    flex-grow: 2;
+}
+
+.task-input-group input[type="date"] {
+    flex-grow: 1;
+}
+
+.task-form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e9ecef;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.task-title {
+    font-weight: 500;
+    cursor: pointer;
+    color: #343a40;
+    font-size: 1.1em;
+}
+
+.task-due-date {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: 2px;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #adb5bd;
+}
+
+.delete-task-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+/* --- SCHEDULER STYLES (Add to src/index.css) --- */
+
+.scheduler-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #e9f7ff;
+    border: 1px solid #cceeff;
+    border-radius: 8px;
+}
+
+.scheduler-section h2 {
+    color: #0056b3;
+    border-bottom: 1px solid #cceeff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.json-input-area {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 0.9em;
+    border: 1px solid #a8c8e0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.scheduler-section button {
+    background-color: #007bff;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.schedule-output {
+    background: #ffffff;
+    padding: 1rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.schedule-output h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #28a745;
+}
+
+.schedule-output ol {
+    padding-left: 20px;
+}
+
+.schedule-error-message {
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
