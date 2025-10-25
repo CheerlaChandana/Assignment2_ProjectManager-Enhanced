@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced.git/static/css/main.800e832b.css",
-    "main.js": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced.git/static/js/main.c799cd74.js",
-    "index.html": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced.git/index.html",
-    "main.800e832b.css.map": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced.git/static/css/main.800e832b.css.map",
-    "main.c799cd74.js.map": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced.git/static/js/main.c799cd74.js.map"
+    "main.css": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced/static/css/main.800e832b.css",
+    "main.js": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced/static/js/main.c799cd74.js",
+    "index.html": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced/index.html",
+    "main.800e832b.css.map": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced/static/css/main.800e832b.css.map",
+    "main.c799cd74.js.map": "/CheerlaChandana/Assignment2_ProjectManager-Enhanced/static/js/main.c799cd74.js.map"
   },
   "entrypoints": [
     "static/css/main.800e832b.css",
